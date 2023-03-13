@@ -125,9 +125,9 @@ import { defineStore } from 'pinia'
 
 export const todos = defineStore('todos', {
   state: () => ({
-    /** @type {{ text: string, id: number, isFinished: boolean }[]} */
+    // @type {{ text: string, id: number, isFinished: boolean }[]} */
     todos: [],
-    /** @type {'all' | 'finished' | 'unfinished'} */
+    // @type {'all' | 'finished' | 'unfinished'} */
     filter: 'all',
     // le type sera automatiquement déduit en nombre
     nextId: 0,
