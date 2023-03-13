@@ -139,9 +139,6 @@ export const todos = defineStore("todos", {
     unfinishedTodos(state) {
       return state.todos.filter((todo) => !todo.isFinished);
     },
-    /**
-     * @returns {{ text: string, id: number, isFinished: boolean }[]}
-     */
     filteredTodos(state) {
       if (this.filter === "finished") {
         // appeler d'autres getters avec autocomplétion ✨
